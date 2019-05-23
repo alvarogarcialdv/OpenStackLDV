@@ -1,0 +1,20 @@
+site_name: OpenStackLDV
+nav:
+- Inicio: 'index.md'
+#- 1-¿Qué es un IaaS?: '1-IaaS/IaaS.md'   
+#- 2-OpenStack: '2-OpenStack/Openstack.md'
+
+- About:
+    - 'Licencia': 'licencia.md'
+
+
+##theme: 'windmill'
+##theme: 'cinder'
+## theme: 'rtd-dropdown'
+theme:
+  name: 'material'
+  language: 'es'
+
+markdown_extensions:
+  - admonition
+  - codehilite
