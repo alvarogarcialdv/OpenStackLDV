@@ -1,8 +1,8 @@
 site_name: OpenStackLDV
 nav:
-- Inicio: 'index.md'
-#- 1-¿Qué es un IaaS?: '1-IaaS/IaaS.md'   
-#- 2-OpenStack: '2-OpenStack/Openstack.md'
+- 1. Inicio: 'README.md'
+- 2. ¿Qué es un IaaS?: '02-IaaS/IaaS.md'   
+- 3. OpenStack: '03-OpenStack/OpenStack.md'
 
 - About:
     - 'Licencia': 'licencia.md'

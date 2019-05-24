@@ -6,7 +6,6 @@ Su objetivo es servir de apoyo en la docencia de los ciclos formativos de Formac
 
 El despliegue de esta infraestuctura ha sido posible gracias al proyecto [Computación den la nube: de la empresa al aula](https://cloud.informaticaldv.com/) desarrollado junto a la empresa  [FLOSSystems](https://flossystems.com/) y gracias al apoyo de la [Fundación Bankia por la Formación Dual](https://www.dualizabankia.com), de la [Asociación FPempresa](http://fpempresa.net/) y de la [Comunidad de Madrid](http://www.comunidad.madrid/servicios/educacion/formacion-profesional).
 
-<!--
-* [1-¿Qué es un IaaS?](1-IaaS/IaaS.md)
-* [2-OpenStack](2-Openstack/OpenStack.md)
--->
+1. [Inicio](README.md)
+2. [¿Qué es un IaaS?](02-IaaS/IaaS.md)
+3. [OpenStack](03-OpenStack/OpenStack.md)
