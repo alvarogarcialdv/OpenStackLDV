@@ -36,7 +36,7 @@
     
     
       
-        <title>2. Computación distribuida (cloud computing) - OpenStackLDV</title>
+        <title>2. Cloud computing y computación distribuida - OpenStackLDV</title>
       
     
     
@@ -71,7 +71,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#iaas" tabindex="1" class="md-skip">
+      <a href="#cloud-computing-y-computacion-distribuida" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -97,7 +97,7 @@
                 OpenStackLDV
               </span>
               <span class="md-header-nav__topic">
-                2. Computación distribuida (cloud computing)
+                2. Cloud computing y computación distribuida
               </span>
             
           
@@ -188,9 +188,45 @@
       
     
     
-    <a href="./" title="2. Computación distribuida (cloud computing)" class="md-nav__link md-nav__link--active">
-      2. Computación distribuida (cloud computing)
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        2. Cloud computing y computación distribuida
+      </label>
+    
+    <a href="./" title="2. Cloud computing y computación distribuida" class="md-nav__link md-nav__link--active">
+      2. Cloud computing y computación distribuida
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-computing" title="Cloud Computing" class="md-nav__link">
+    Cloud Computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computacion-distribuida" title="Computación distribuida" class="md-nav__link">
+    Computación distribuida
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -332,6 +368,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-computing" title="Cloud Computing" class="md-nav__link">
+    Cloud Computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computacion-distribuida" title="Computación distribuida" class="md-nav__link">
+    Computación distribuida
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -343,7 +402,95 @@
               
                 
                 
-                <h1 id="iaas">IaaS</h1>
+                <h1 id="cloud-computing-y-computacion-distribuida">Cloud computing y computación distribuida</h1>
+<h2 id="cloud-computing"><strong><em>Cloud Computing</em></strong></h2>
+<p><strong><em>Cloud Computing</em></strong>  es un paradigma o modelo que permite ofrecer servicios de computación bajo demanda a través de una red. El objetivo es utilizar la tecnología para implantar infraestructuras “invisibles” que permitan convertir recursos como computación, almacenamiento, redes, aplicaciones, etc. en un servicio donde se pague por su uso  sin que sean necesarias inversiones iniciales. Permite a las organizaciones externalizar parte de su cómputo y de su almacenamiento a un proveedor que típicamente ofrece un modelo de pago por uso, o crear nubes privadas (on-premise) para tener las ventajas de las tecnologías cloud dentro de una organización, sin necesidad de depender de un proveedor público.</p>
+<ul>
+<li>En la siguiente presentación es posible ampliar informacion: <a href="../OpenStackLDV-Introducción al Cloud Computing.pdf">OpenStackLDV-Introducción al Cloud Computing</a></li>
+</ul>
+<p>La nube (<em>cloud</em>) es por lo tanto una metáfora que engloba recursos virtuales y físicos alojados y ofrecidos por un determinado proveedor (Cloud de Google, Cloud de Amazon, Cloud de Microsoft, ....) o de forma privada. Cada proveedor ofrece su servicios con un modelo de pago por uso (tiempo de uso de CPU, uso de almacenamiento, tráfico de red, etc..) siendo el objetivo principal ajustar el consumo de recursos a las necesidades de las aplicaciones y usuarios de forma dinámica, elástica y rápida adaptando el consumo a la demanda.  </p>
+<p>En el modelo tradicional las inversiones en hardware se quedan obsoletas en poco tiempo y la demanda de recursos de cómputo puede ser muy variable. Si hay un sobre-dimensionamiento parte de los recursos no son utilizados y es necesaria una inversión de hardware para determinados intervalos de tiempo, y con un sub-dimensionamiento si hay picos de carga que no se pueden atender, no se ofrece el servicio de forma adecuada.</p>
+<p>Existen tres modelos a la hora de desplegar un cloud:</p>
+<ul>
+<li>
+<p><strong>Cloud público</strong></p>
+<ul>
+<li>Servicio abierto al público ofrecido por un proveedor.</li>
+<li>Recursos hardware propiedad del proveedor.</li>
+<li>Gestión del <em>cloud</em> por parte del proveedor.</li>
+<li>Suscripción del usuarios en el  proveedor (el tiempo que quieras).</li>
+<li>Pago por uso (usuarios, empresas, organizaciones, etc.).</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud privado</strong></p>
+<ul>
+<li>Uso exclusivo de una organización y/o múltiples usuarios.</li>
+<li>Gestión del <em>cloud</em> por la propia organización.</li>
+<li>Puede delegarse la gestión y operación a una compañía especializada.</li>
+<li>Recursos hardware propios.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud híbrido</strong></p>
+<ul>
+<li>Dos o más infraestructuras de cloud distintas que aparecen como entidad única.</li>
+<li>Combinan ambos modelos de <em>cloud</em> (privado o público). Por ejemplo, se delega temporalmente en un cloud público cuando se excede la capacidad de cómputo de un cloud privado.</li>
+</ul>
+</li>
+</ul>
+<p>El campo de <em>cloud computing</em> es muy amplio y es posible realizar varias clasificaciones y diferenciar entre múltiples tipos de cloud con diversidad de matices, pero la clasificación más genérica y extendida es la que se propone a continuación.</p>
+<ul>
+<li>
+<p><strong><em>Software as a service (SaaS)</em></strong></p>
+<ul>
+<li>Orientado a usuarios.</li>
+<li>Aplicaciones ejecutando sobre una infraestructura cloud son ofrecidas como servicio.</li>
+<li>Los usuarios pagan por el uso, no por poseer el software (ni siquiera licencias)</li>
+<li>Ejemplos: Dropbox, Google Drive, Evernote, Office 365, ... </li>
+</ul>
+</li>
+<li>
+<p><strong><em>Platform as a service (PaaS)</em></strong></p>
+<ul>
+<li>Orientado a desarrolladores.</li>
+<li>Plataforma de software y entornos de desarrollo y pruebas ofrecidos como servicio.</li>
+<li>Abstrae hardware y servicios.</li>
+<li>Permite el despliegue y ejecución de aplicaciones.</li>
+<li>Servicio para todas las fases de desarrollo y pruebas de software.</li>
+<li>Ejemplos<ul>
+<li>Proveedores de PaaS públicos: OpenShitft, Heroku, Google App Engine, Microsoft Azure, Amazon Web Services, Force.com, Jelastic …</li>
+<li>Software para desplegar PaaS: OpenShitft Origin, , Cloudfoundry, Dokku, Tsuru, Apache Stratos, ...</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Infrastructure as a service (IaaS)</em></strong></p>
+<ul>
+<li>Orientado a administradores. </li>
+<li>Capacidades de cómputo,  almacenamiento y red (máquinas/hardware) ofrecidas como servicio. Se ofrecen máquinas virtuales.</li>
+<li>Ejemplos<ul>
+<li>Proveedores de Iaas:  Amazon Web Services, RackSpace, Google Compute Engine, Microsoft Azure Service Plataform, HP Cloud, GoGrid, …</li>
+<li>Software para desplegar IaaS:  OpenStack,  OpenNebula, Cloudstack, Eucalyptus, Vmware vCloud, ...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>De hecho, la tendencia es ofrecer cada vez más cualquier tipo de recurso como un servicio y se suele hablar del término:  <strong><em>XaaS (Anything as a Service)</em></strong>.</p>
+<h2 id="computacion-distribuida">Computación distribuida</h2>
+<p>La <strong>computación distriuida</strong> es el arte de construir grandes sistemas divididos en muchas máquinas que proveen un servicio. Cientos o miles de máquinas pueden estar implicadas y servir a millones de usuarios.  Contrasta con sistemas limitados donde un solo servidor ejecuta un único servicio al que los clientes acceden simultáneamente.</p>
+<p>La computación distribuida es hoy día ubicua y hace posibles (fiables, escalables y rápidos) los servicios que usamos a
+diario. Popularmente se la conoce como <em>cloud</em> o <em>cloud computing</em>.</p>
+<p>Ha transformado completamente el sector.</p>
+<ul>
+<li>Los fallos son algo asumido por diseño (hay miles de máquinas).   </li>
+<li>Sistemas antifrágiles (no solo resisten sino que mejoran con los fallos).</li>
+<li>Sistemas distribuidos, sin puntos únicos de fallo (SPoF).</li>
+<li>Se ofrecen los recursos en pools, de forma elástica (posteriormente se explica este concepto) y encapsulada,como si fuesen infinito.</li>
+</ul>
+<p>La información anterior es una extracto de la presentación <a href="../OpenStackLDV-Computación distribuida.pdf">OpenStackLDV-Computación distribuida</a>, realizada por <a href="https://flossystems.com/">Flossystems</a>, que contiene información muy útil e interesante sobre construir infraestucturas IT en producción, el cambio de paradigma que se esta produciendo, principos DevOS, Automatización,etc.</p>
                 
                   
                 
