@@ -12,5 +12,6 @@ El despliegue de esta infraestuctura ha sido posible gracias al proyecto "[Compu
 4. [OpenStack](docs/04-OpenStack/OpenStack.md)
 5. [Servicios ofrecidos por OpenStackLDV](docs/05-Servicios/Servicios.md)
 6. [Recursos de OpenStackLDV](docs/06-Recursos/Recursos.md)
-7. [Acceso a OpenStackLDV](docs/07-Acceso/Acceso.md)
+7. [Acceso a panel web (Horizon) de OpenStackLDV](docs/07-Acceso/Acceso.md)
 8. [Primeros pasos en OpenStackLDV](docs/08-PrimerosPasos/PrimerosPasos.md)
+9. [Conceptos](docs/09-Conceptos/Conceptos.md)

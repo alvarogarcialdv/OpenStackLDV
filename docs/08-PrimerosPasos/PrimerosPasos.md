@@ -4,9 +4,11 @@
 
 Para poder acceder a los servicios de OpenStackLDV tienes que disponer de una cuenta de **usuario** con acceso a un **proyecto** (*tenant*).
 
-Cada **usuario** (*user*) dispone de una cuenta y puede ser miembro de uno o varios proyectos.
+Cada **usuario** (*user*) dispone de una cuenta y puede ser miembro de uno o varios proyectos. 
 
 Un **proyecto** (o *tenant*) es una arupación de recursos del cloud (núcleos de procesador -VCPU-, RAM o espacio de almacenamiento) disponible para uno o más usuarios. Los recursos disponibles se definen a través de *quotas*. Pueden crearse proyectos para un usuario, un departamento, una organización, ... Por convención, cuando un proyecto contienen a un solo usuario se suele denominar igual que el usuario.
+
+En **OpenstackLDV** se forma predeterminada cada usuario pertenece a un proyecto con su mismo nombre pero puede ser miembro de más de un proyecto (p.e. 2ASIR-SRI, 2ASIR-DAD, ...)
 
 Las operaciones que un usuario puede realizar sobre un proyecto quedan determinadas por un **rol** (*role*) (conjunto de permisos que establecen qué operaciones puede realizar un usuario en un proyecto dado).
 
@@ -16,8 +18,8 @@ Solicita tu usuario y contraseña de acceso a tus profesores.
 
 Una vez que dispongas de tu nombre de usuario y contraseña puedes iniciar sesión en el panel web de Horizon, hay dos opciones disponibles:
 
-* [http://openstack.informaticaldv.com](http://openstack.informaticaldv.com)
-* [http://192.168.211.11](http://192.168.211.11.)
+- [http://openstack.informaticaldv.com](http://openstack.informaticaldv.com)
+- [http://192.168.211.11](http://192.168.211.11.)
 
 ![Inicio de sesión en Horizon](img/horizon.png)
 
@@ -33,7 +35,7 @@ La primera vez que inicies sesión deberías cambiar tu contraseña. Lo puedes h
 
 ![Cambio de contraseña](img/contraseña.png)
 
-## Tema 
+## Tema
 
 Puedes cambiar el tema del panel web de Horizon pinchando en el nombre de usuario con la opción
 

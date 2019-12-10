@@ -6,8 +6,11 @@ nav:
 - 4. OpenStack: '04-OpenStack/OpenStack.md'
 - 5. Servicios ofrecidos por OpenStackLDV: '05-Servicios/Servicios.md'
 - 6. Recursos de OpenStackLDV: '06-Recursos/Recursos.md'
-- 7. Acceso a OpenStackLDV: '07-Acceso/Acceso.md'
+- 7. Acceso a panel web (Horizon) de OpenStackLDV: '07-Acceso/Acceso.md'
 - 8. Primeros pasos en OpenStackLDV: '08-PrimerosPasos/PrimerosPasos.md'
+- 9. Conceptos: '09-Conceptos/Conceptos.md'
+
+
 
 
 - About:
