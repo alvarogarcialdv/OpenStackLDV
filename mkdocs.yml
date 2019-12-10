@@ -1,7 +1,7 @@
 site_name: OpenStackLDV
 nav:
 - 1. Inicio: 'README.md'
-- 2. Computación distribuida (cloud computing): 02-Cloud/Cloud.md
+- 2. Cloud computing y computación distribuida: 02-Cloud/Cloud.md
 - 3. ¿Qué es un IaaS?: '03-IaaS/IaaS.md'   
 - 4. OpenStack: '04-OpenStack/OpenStack.md'
 - 5. Servicios ofrecidos por OpenStackLDV: '05-Servicios/Servicios.md'
