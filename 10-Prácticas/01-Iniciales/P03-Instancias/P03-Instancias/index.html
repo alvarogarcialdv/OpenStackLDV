@@ -1,0 +1,645 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>P03-Crear instancias - OpenStackLDV</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#p03-crear-instancias" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="OpenStackLDV" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                OpenStackLDV
+              </span>
+              <span class="md-header-nav__topic">
+                P03-Crear instancias
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="OpenStackLDV" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    OpenStackLDV
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="1. Inicio" class="md-nav__link">
+      1. Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../02-Cloud/Cloud/" title="2. Cloud computing y computación distribuida" class="md-nav__link">
+      2. Cloud computing y computación distribuida
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../03-IaaS/IaaS/" title="3. ¿Qué es un IaaS?" class="md-nav__link">
+      3. ¿Qué es un IaaS?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../04-OpenStack/OpenStack/" title="4. OpenStack" class="md-nav__link">
+      4. OpenStack
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../05-Servicios/Servicios/" title="5. Servicios ofrecidos por OpenStackLDV" class="md-nav__link">
+      5. Servicios ofrecidos por OpenStackLDV
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../06-Recursos/Recursos/" title="6. Recursos de OpenStackLDV" class="md-nav__link">
+      6. Recursos de OpenStackLDV
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../07-Acceso/Acceso/" title="7. Acceso a panel web (Horizon) de OpenStackLDV" class="md-nav__link">
+      7. Acceso a panel web (Horizon) de OpenStackLDV
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../08-PrimerosPasos/PrimerosPasos/" title="8. Primeros pasos en OpenStackLDV" class="md-nav__link">
+      8. Primeros pasos en OpenStackLDV
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../09-Conceptos/Conceptos/" title="9. Conceptos" class="md-nav__link">
+      9. Conceptos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    
+    <label class="md-nav__link" for="nav-10">
+      10. Prácticas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        10. Prácticas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" checked>
+    
+    <label class="md-nav__link" for="nav-10-1">
+      10.1. Iniciales (Horizon)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-1">
+        10.1. Iniciales (Horizon)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P01-ImágenesPúblicas/P01-ImágenesPúblicas/" title="P01-Imágenes públicas" class="md-nav__link">
+      P01-Imágenes públicas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P02-RedesRouters/P02-RedesRouters/" title="P02-Redes y routers" class="md-nav__link">
+      P02-Redes y routers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="P03-Crear instancias" class="md-nav__link md-nav__link--active">
+      P03-Crear instancias
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P04-IPsFlotantesGruposSeguridad/P04-IPsFlotantesGruposSeguridad/" title="P04-IPs Flotantes y Grupos de Seguridad" class="md-nav__link">
+      P04-IPs Flotantes y Grupos de Seguridad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P05-ClavesSSH/P05-ClavesSSH/" title="P05-Claves SSH" class="md-nav__link">
+      P05-Claves SSH
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P06-SnapshotsDeInstancias/P06-SnapshotsDeInstancias/" title="P06-Snapshots de instancias" class="md-nav__link">
+      P06-Snapshots de instancias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P07-Volúmenes/P07-Volúmenes/" title="P07-Volúmenes" class="md-nav__link">
+      P07-Volúmenes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../P08-Borrado/P08-Borrado/" title="P08-Borrado de componentes" class="md-nav__link">
+      P08-Borrado de componentes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../licencia/" title="Licencia" class="md-nav__link">
+      Licencia
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="p03-crear-instancias">P03-Crear instancias</h1>
+<p>En esta práctica vamos a:</p>
+<ul>
+<li>Crear una instancia en tu proyecto a partir de sabor <strong><em>tiny</em></strong> usando la imagen de <strong>CirrOS</strong>.</li>
+<li>Conectar la instancia a la <strong>red01</strong> creada en la práctica anterior.</li>
+<li>Usar la consola VNC para acceder la instancia creada y verificar su configuración IP.</li>
+<li>Crear otra instancia similar y verificar que hay comunicación IP entre las instancias.</li>
+</ul>
+<p>Consulta información sobre <strong>sabores</strong> en la sección <a href="../../../../09-Conceptos/Conceptos/#sabores-o-tipos-de-instancias">Conceptos</a>.</p>
+<p>Consulta información sobre <strong>instancias</strong> en la sección <a href="../../../../09-Conceptos/Conceptos/#instancias">Conceptos</a>.</p>
+<ol>
+<li>Accede a Horizon.</li>
+<li>Inicia sesión con tu usuario y contraseña.</li>
+<li>
+<p>Accede a <strong><em>Project, Compute, Instances</em></strong>. Pincha en <strong><em>Lauch Instance</em></strong>.</p>
+<ul>
+<li>3.1. Introduce el nombre <strong>cirros01</strong> y pincha en <strong>*Next</strong>.</li>
+</ul>
+<p><img alt="Nombre de la instancia" src="../img/cirros01_1.png" /></p>
+<ul>
+<li>3.2. Selecciona la imágen pública de <strong>CirrOS</strong> para crear la instancia a partir de ella  y pincha en <strong>*Next</strong>.</li>
+</ul>
+<p><img alt="Imagen a partir de la que se crea  la instancia" src="../img/cirros01_2.png" /></p>
+<ul>
+<li>3.3. Selecciona <strong><em>tiny</em></strong> como sabor y pincha en <strong>*Next</strong>.</li>
+</ul>
+<p><img alt="Sabor que determinará los recursos de la instancia" src="../img/cirros01_3.png" /></p>
+<ul>
+<li>3.4. Selecciona la <strong>red01</strong> para conectar a ella la instancia y pincha en <strong>*Next</strong>.</li>
+</ul>
+<p><img alt="Red a la que se conecta la instancia" src="../img/cirros01_4.png" /></p>
+<ul>
+<li>3.5. Pincha en <strong><em>Lauch Instance</em></strong> para crear la instancia (el resto de opciones disponibles se dejan com su valor por defecto, se tratarán en futuras prácticas).</li>
+</ul>
+</li>
+<li>
+<p>Observa las características de la instancia creada (imagen, sabor, estado, ...). Observa que la dirección IP asignada.
+<img alt="Instancia creada" src="../img/cirros01_5.png" /></p>
+</li>
+<li>Accede a <strong><em>Project, Network, Network Topology</em></strong> y observa la topología de red. Observa donde está conectada la instancia.
+<img alt="Topología de red" src="../img/topología_1.png" /></li>
+<li>Accede a <strong><em>Project, Compute, Instances</em></strong>. Pincha sobre el nombre de la instancia <strong>cirros01</strong> y accede a la pestaña <strong><em>Console</em></strong>. Abre en nueva pestaña la consola usado el enlace <strong><em>Click here to show only console</em></strong>.
+<img alt="Consola" src="../img/consola_1.png" /></li>
+<li>Inicia sesión con el usuario <strong>cirros</strong> y la contraseña que indica <strong>gocubsgo</strong>.</li>
+<li>Consulta la IP de la máquina y verifica que tiene comunicación con la IP 10.33.1.1 (del router01).
+<img alt="Consola" src="../img/consola_2.png" /></li>
+<li>Haz ping a una dirección a una IP del instituto (por ejemplo 192.168.200.100) y verifica que no hay comunicación.</li>
+<li>Usa <code>nslookup</code> para resolver un nombre DNS y verificar que hay comunicación con Internet ya que el servidor DNS al que se pregunta es el 8.8.8.8.
+<img alt="Consola" src="../img/consola_3.png" /></li>
+<li>Crea otra instancia similar con el nombre <strong>cirros02</strong> y verifica que hay comunicación IP entre las instancias. Tienes que seguir unos pasos simililares a los anteriores y verificar la IP de la nueva instancia.
+<img alt="Instancia cirros02" src="../img/cirros02.png" />
+<img alt="Consola" src="../img/consola_4.png" /></li>
+<li>Accede a <strong><em>Project, Network, Network Topology</em></strong> y verifica la topología de red creada.
+<img alt="Topología de red" src="../img/topología_2.png" /></li>
+<li>En cada instancia accede a <strong><em>Actions</em></strong> (flecha hacía abajo), <strong><em>Shut Off Instance</em></strong> para apagar las instancias cirros01 y cirros02.</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../P02-RedesRouters/P02-RedesRouters/" title="P02-Redes y routers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                P02-Redes y routers
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../P04-IPsFlotantesGruposSeguridad/P04-IPsFlotantesGruposSeguridad/" title="P04-IPs Flotantes y Grupos de Seguridad" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                P04-IPs Flotantes y Grupos de Seguridad
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.5e60981f.js"></script>
+      
+        
+        
+          
+          <script src="../../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
