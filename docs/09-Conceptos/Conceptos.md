@@ -21,16 +21,17 @@ Antes de empezar a utilizar los servicios de OpenStackLDV es necesario conocer s
     - Contenedores de imagen:
         - OVF: estándar abierto.
         - AMI: Una imagen de máquina Amazon, que precisa de una imagen aki y habitualmente de otra ari para poder arrancar.
-- Cloud-images
-    - Una *cloud-image* es una imagen preconstruida por una distribución.
+    - Las imágenes son archivos de *solo lectura*.
+- *Cloud-images*
+    - Una *cloud-image* es una imagen preconstruida por una distribución/SO.
     - Son discos arrancables, con el sistema operativo ya instalado y con datos específicos eliminados
 (“anonimizada”).
     - Las principales “distros” libres las proporcionan ([OpenStack Get Images](https://docs.openstack.org/image-guide/obtain-images.html)).
-    - El proyecto CirrOS nos ofrece imágenes de testing (¡no aptas para producción!).
+    - El proyecto [CirrOS](https://docs.openstack.org/image-guide/obtain-images.html#cirros-test) nos ofrece imágenes de testing (¡no aptas para producción!).
     - Es posible crear nuestras propias *cloud-images* instalando nuestro sistema operativo y haciendo una serie de configuraciones.
-    - Las imágenes son archivos de *solo lectura*.
 
-![Imágenes](img/imagenes.png)
+
+![Imágenes](img/imágenes.png)
 
 Lo habitual en un IaaS es que existan un conjunto de imágenes genéricas (*cloud-images*) y públicas (accesibles por todos los usuarios) para poder crear instancias. Además, cada usuario podrá crear y subir sus propias imágenes en función de los permisos y cuotas que se le hayan otorgado.
 
@@ -59,8 +60,6 @@ Lo habitual en un IaaS es que existan un conjunto de imágenes genéricas (*clou
 - Una snapshot es una instantanea de una instancia.
 - Cuando se crea una *snapshot* de una instancia se crea una nueva imagen con el estado actual de la instancia.
 - A partir de esta nueva imagen se pueden crear nuevas instancias. Esto es muy útil para distribuir imágenes con una configuración específica.
-
-![Snapshots de imágenes](img/snapshotDeImagen.png)
 
 ## **Redes y dispositivos de red**
 
