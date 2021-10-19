@@ -26,3 +26,5 @@ Consulta información sobre **claves SSH** en la sección [Conceptos](../../../0
 	```ssh -i ~/ssh01.pem cirros@ipflotante```
 
 ![Conexión autenticandose con clave pública](img/conexión.png)
+
+En el siguiente [enlace](https://creodias.eu/faq-openstack/-/asset_publisher/TpmSvaqp3CVd/content/how-to-access-vm-from-windows-putty-?inheritRedirect=true) purdes ver como conectarte usando Putty como cliente. 

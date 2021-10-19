@@ -32,7 +32,7 @@ usuarios.
 
 El alojamiento, la administración y el mantenimiento del hardware que la sustenta recaen completamente en manos del proveedor del servicio.
 
-Puedes consultar los siguientes enlaces para más infiormación.
+Puedes consultar los siguientes enlaces para más información.
 
 - [¿Qué es una Iaas?](https://www.ionos.es/digitalguide/servidores/know-how/que-es-iaas/)
 - [Tipos de infraestructura](https://www.securityartwork.es/2019/07/01/la-importancia-del-bastionado-de-servidores-parte-1-introduccion-y-tipos-de-infraestructura/)
