@@ -123,4 +123,3 @@ Ha transformado completamente el sector.
 - Se ofrecen los recursos en pools, de forma elástica (posteriormente se explica este concepto) y encapsulada,como si fuesen infinito.
 
 La información anterior es una extracto de la presentación [OpenStackLDV-Computación distribuida](OpenStackLDV-Computación distribuida.pdf), realizada por [Flossystems](https://flossystems.com/), que contiene información muy útil e interesante sobre construir infraestucturas IT en producción, el cambio de paradigma que se esta produciendo, principos DevOS, Automatización,etc.
-
