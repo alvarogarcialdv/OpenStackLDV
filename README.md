@@ -42,4 +42,4 @@ El despliegue de esta infraestuctura ha sido posible gracias al proyecto "[Compu
         - [A09-Volúmenes-OSC](docs/10-Actividades/OSC/Volúmenes-OSC/Volúmenes-OSC.md)
         - [A10-Borrado de componentes-OSC](docs/10-Actividades/OSC/Borrado-OSC/Borrado-OSC.md)
         - [A11-Servidor Web-OSC](docs/10-Actividades/OSC/ServidorWeb-OSC/ServidorWeb-OSC.md)
-        - [A12-CloudInit](docs/10-Actividades/OSC/CloudInit-OSC/CloudInit-OSC.md)
+        - [A12-CloudInit-OSC](docs/10-Actividades/OSC/CloudInit-OSC/CloudInit-OSC.md)
