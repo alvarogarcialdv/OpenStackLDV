@@ -1,0 +1,9 @@
+#cloud-config
+chpasswd:
+  list: |
+    debian:vincivinci
+  expire: False
+package_update: true
+packages:
+ - apache2
+ 
