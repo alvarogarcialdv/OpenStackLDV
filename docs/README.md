@@ -1,6 +1,6 @@
 # OpenStackLDV
 
-**OpenStackLDV** es el servicio de infraestructura como servicio (IaaS) del [Departamento de Informática](https://www.informaticaldv.com/) de [IES Leonardo Da Vinci](http://www.iesleonardo.com) de Madrid.
+**OpenStackLDV** es el servicio de Infraestructura como servicio (IaaS) del [Departamento de Informática](https://www.informaticaldv.com/) de [IES Leonardo Da Vinci](http://www.iesleonardo.com) de Madrid.
 
 Su objetivo es servir de apoyo en la docencia de los ciclos formativos de Formación Profesional impartidos en el instituto.
 
